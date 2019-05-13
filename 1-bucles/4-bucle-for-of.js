@@ -33,3 +33,7 @@ let gente = [{
         edad: 10
     },
 ]
+
+for (var persona of gente){
+    if (persona.edad>25)console.log(persona.nombre)
+}

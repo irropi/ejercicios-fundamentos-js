@@ -5,7 +5,15 @@
 
 
 // Aquí tu código
-
+var obj = {
+    a: {
+        b : true,
+        c : [0, 1]
+    },
+    d: 5,
+    f: "hilo", 
+    
+};
 // Hasta aquí
 
 // TEST 1

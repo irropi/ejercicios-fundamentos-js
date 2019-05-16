@@ -9,7 +9,13 @@
 //  throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number');
 
 // Aquí tu código
-
+function muestraPorConsolaEurosEnPesetas(i) {
+    if (typeof i !== "number") {
+        throw new Error('muestraPorConsolaEurosEnPesetas debe recibir un number')
+    } else { 
+        console.log(i * 168)
+    }
+}
 
 // Hasta aquí
 

@@ -12,9 +12,16 @@
 let sumaDesdeHasta = (desde, hasta) => {
     let sumatorio = 0;
     // Aquí tu código.  Desde aquí:
-
+    if ( desde <= hasta) {
+         for (let i = desde; i <= hasta; i++){
+             sumatorio+=i;
+         }
+    } else if (desde != 0 || hasta != 0  ) {
+         throw new Error('Debo recibir números')
+    }
+    
     // Hasta aquí.
-    return sumatorio;
+        return sumatorio;
 }
 
 

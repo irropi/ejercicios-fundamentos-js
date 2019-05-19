@@ -6,7 +6,7 @@
 // extraerAcronimo('Estudiante','Del','Bootcamp','Fullstack','Geekshubs') === 'EDBFG'
 
 
-// 
+// return input.map(i => i[0]).toString
 // utilizar un bucle for of
 
 // Ha de pasar los test adjuntados.
@@ -14,7 +14,11 @@
 let extraerAcronimo = (...input) => {
     let acronimo = '';
     // Aquí tu código.  Desde aquí:
-   
+   for (let inicial of input)  {
+    acronimo += inicial.charAt(0);
+   }
+
+    
     // Hasta aquí.
     return acronimo;
 }
@@ -25,3 +29,6 @@ let test = require('../test.js');
 test(extraerAcronimo, ['Estudiante', 'Del', 'Bootcamp', 'Fullstack', 'Geekshubs'], 'EDBFG');
 test(extraerAcronimo, ['hola', 'caracola'], 'hc');
 test(extraerAcronimo, ['33', '44',' '], '34 ');
+
+
+
